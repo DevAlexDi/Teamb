@@ -1,0 +1,61 @@
+@import "layout/var";
+
+.baner {
+    position: relative;
+    min-height: 896px;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/baner.jpg);
+    display: flex;
+    align-items: center;
+
+    &__content {
+        width: 100%;
+    }
+}
+
+.baner-content {
+    padding-top: 130px;
+    &__title {
+        font-size: 48px;
+        line-height: 58px;
+        color: #fff;
+        font-family: $mus900;
+        margin-bottom: 16px;
+    }
+
+    &__sub-title {
+        color: #fff;
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 24px;
+        font-family: $mus700;
+
+    }
+
+    &__description {
+        color: #fff;
+        font-size: 22px;
+        line-height: 25px;
+        margin-bottom: 32px;
+    }
+}
+
+.button-wr {
+    display: flex;
+
+    &__button {
+        display: block;
+        border: none;
+        background: $red;
+        padding: 11px 36px;
+        font-size: 24px;
+        line-height: 29px;
+        color: #fff;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background: $black;
+        }
+    }
+}

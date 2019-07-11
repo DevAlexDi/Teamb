@@ -1,0 +1,50 @@
+@import "layout/var";
+
+.for-what {
+    margin-bottom: 16px;
+
+    &__title {
+        text-align: center;
+        font-size: 30px;
+        line-height: 36px;
+        font-family: $mus900;
+        margin-bottom: 40px;
+        color: $black;
+    }
+
+    &__sub-title {
+        text-align: center;
+        font-size: 30px;
+        line-height: 36px;
+        color: $black;
+        margin-bottom: 40px;
+    }
+}
+
+.for-what-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    &__item {
+        position: relative;
+        padding-left: 27px;
+        margin-bottom: 15px;
+
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 8px;
+            left: 0;
+            width: 11px;
+            height: 11px;
+            background: $red;
+            border-radius: 50%;
+        }
+    }
+
+    &__text {
+        font-size: 18px;
+    }
+}

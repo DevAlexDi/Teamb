@@ -1,0 +1,38 @@
+@import "layout/var";
+
+.program {
+    margin-bottom: 40px;
+    padding: 24px 0 6px 0;
+    background: #FBFBFB;
+
+    &__title {
+        font-size: 30px;
+        line-height: 36px;
+        color: $black;
+        margin-bottom: 48px;
+        text-align: center;
+        font-family: $mus900;
+    }
+}
+
+.flex-program {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+
+    &__item {
+        width: 50%;
+        padding: 0 15px;
+        margin-bottom: 24px;
+    }
+
+    &__img {
+        margin: 0 auto 12px;
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+    }
+}

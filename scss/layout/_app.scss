@@ -1,0 +1,42 @@
+@import "layout/var";
+
+body {
+    font-family: $mus300;
+}
+
+p {
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    font-weight: normal;
+}
+button,input{
+    outline: none;
+}
+
+.navbar-collapse {
+    padding: 0;
+}
+
+a:focus{
+    outline: none;
+}
+
+.navbar-toggle {
+    position: absolute;
+    right: 0;
+    left: auto;
+    top: 0;
+    z-index: 20;
+    float: none;
+    .icon-bar {
+        background: #000;
+    }
+}
+
+.app {
+    max-width: 1920px;
+    margin: 0 auto;
+}
