@@ -1,0 +1,51 @@
+@import "layout/var";
+
+.how-long {
+   padding: 36px 0;
+
+   &__title {
+        font-size: 30px;
+        line-height: 40px;
+        color: $black;
+        margin-bottom: 22px;
+        text-align: center;
+        font-family: $mus900;
+   }
+   &__sub-title-wr {
+       max-width: 980px;
+       margin: 0 auto;
+       margin-bottom: 40px;
+   }
+
+   &__sub-title {
+        margin-bottom: 20px;
+        font-size: 18px;
+        color: $black;
+   }
+
+   &__text {
+        font-size: 24px;
+        line-height: 40px;
+        text-align: justify;
+        color: $black;
+        margin-bottom: 40px;
+
+        span{
+            font-family: $mus900;
+        }
+   }
+
+   &__video {
+        max-width: 930px;
+        margin: 0 auto;
+        padding: 15px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.15);
+
+        iframe {
+            height: 480px;
+            display: block;
+            width: 100%;
+        }
+   }
+}

@@ -1,0 +1,48 @@
+@import "layout/var";
+
+.history {
+    padding: 16px 0 36px 0;
+
+    &__title {
+        font-size: 30px;
+        line-height: 36px;
+        text-align: center;
+        font-family: $mus900;
+        color: $black;
+        max-width: 646px;
+        margin: 0 auto 24px;
+    }
+
+    &__sub-title {
+        font-size: 18px;
+        line-height: 22px;
+        color: $black;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    &__line {
+        max-width: 500px;
+        margin: 0 auto;
+        height: 1px;
+        background: #E5E5E5;
+
+        &--big {
+            max-width: 751px;
+            margin-top: 40px;
+            margin-bottom: 16px;
+        }
+    }
+
+    &__text {
+        padding: 24px 0;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: justify;
+        color: $black;
+
+        span{
+            font-family: $mus900;
+        }
+    }
+}

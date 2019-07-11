@@ -1,0 +1,45 @@
+@import "layout/var";
+
+.clients {
+    padding-bottom: 60px;
+
+    &__title {
+        font-size: 30px;
+        line-height: 36px;
+        color: $black;
+        text-align: center;
+        font-family: $mus900;
+        margin-bottom: 34px;
+    }
+
+    &__sub-title {
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        color: $black;
+        margin-bottom: 17px;
+    }
+
+    
+}
+
+.clients-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 24px;
+
+    &__item {
+        width: 16.66%;
+        padding: 7px;
+    }
+    
+    &__logo {
+        margin: 0 auto;
+    }
+
+    &--hidden {
+        display: none;
+    }
+}
+
