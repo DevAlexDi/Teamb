@@ -20,8 +20,6 @@
     }
 
     &__description {
-        max-width: 800px;
-        padding-left: 70px;
         margin-bottom: 40px;
 
         @media (max-width: 767px) {
@@ -101,7 +99,7 @@
     }
 
     &__sub-title {
-        font-size: 24px;
+        font-size: 18px;
         line-height: 29px;
         color: $black;
 

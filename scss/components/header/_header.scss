@@ -5,17 +5,14 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding-bottom: 15px;
     z-index: 50;
     transition: 0.3s;
 
     @media (max-width: 767px) {
         background: #fff;
-        padding-bottom: 7px;
     }
 
     &__top {
-        margin-bottom: 20px;
         transition: margin 0.3s;
 
         @media (max-width: 767px) {
@@ -23,22 +20,80 @@
         }
     }
 
-    .change-size {
-        width: 119px;
-        transition: 0.3s;
+
+    &__bott {
+        transition: 0.15s;
+        padding: 15px 0;
+
+        @media (max-width: 767px) {
+            padding: 0;
+        }
+    }
+
+    &__onfixed {
+        display: none;
     }
 
     &--fixed {
-        position: fixed;
-        background: #fff;
-        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-        .header__top{
-            margin-bottom: 0;
+        .header__bott {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #fff;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+            @media (max-width: 767px) {
+                padding: 10px 0;
+            }
+            
+        }
+
+        .navbar-toggle {
+            top: -14px;
+        }
+
+        .header-menu {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            @media (max-width: 767px) {
+                flex-direction: column-reverse;
+                justify-content: flex-end;
+                align-items: flex-start;
+            }
+        }
+
+        .header__onfixed {
+            display: block;
+            width: 220px;
+
+            @media (max-width: 1199px) {
+                width: auto;
+            }
+        }
+
+        .menu-list__item {
+            padding: 0 7px;
+
+            @media (max-width: 991px) {
+                padding: 0 5px;
+            }
+        }
+
+        .menu-list__link {
+            font-size: 16px;
+
+            @media (max-width: 991px) {
+                font-size: 15px;
+            }
         }
 
         .change-size {
             width: 90px;
         }
+
+        
     }
 }
 
@@ -105,7 +160,8 @@
     transition: color 0.3s;
 
     @media (max-width: 991px) {
-        font-size: 18px;
+        font-size: 16px;
+        padding-left: 40px;
     }
 
     &:before {
@@ -140,7 +196,7 @@
 
     @media (max-width: 767px) {
         display: block;
-        padding-top: 10px;
+        padding-top: 15px;
     }
 
     &__item {
