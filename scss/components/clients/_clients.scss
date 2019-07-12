@@ -10,6 +10,11 @@
         text-align: center;
         font-family: $mus900;
         margin-bottom: 34px;
+
+        @media (max-width: 767px) {
+            font-size: 18px;
+            line-height: normal;
+        }
     }
 
     &__sub-title {
@@ -18,6 +23,11 @@
         text-align: center;
         color: $black;
         margin-bottom: 17px;
+
+        @media (max-width: 767px) {
+            font-size: 16px;
+            line-height: normal;
+        }
     }
 
     
@@ -32,6 +42,10 @@
     &__item {
         width: 16.66%;
         padding: 7px;
+
+        @media (max-width: 767px) {
+            width: 33.33%;
+        }
     }
     
     &__logo {

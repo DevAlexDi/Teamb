@@ -10,6 +10,11 @@
         margin-bottom: 22px;
         text-align: center;
         font-family: $mus900;
+
+        @media (max-width: 767px) {
+          font-size: 24px;
+          line-height: normal;
+          }
    }
    &__sub-title-wr {
        max-width: 980px;
@@ -21,6 +26,11 @@
         margin-bottom: 20px;
         font-size: 18px;
         color: $black;
+
+        @media (max-width: 767px) {
+          font-size: 16px;
+          line-height: normal;
+      }
    }
 
    &__text {
@@ -29,6 +39,11 @@
         text-align: justify;
         color: $black;
         margin-bottom: 40px;
+
+        @media (max-width: 767px) {
+          font-size: 18px;
+          line-height: normal;
+       }
 
         span{
             font-family: $mus900;
@@ -46,6 +61,14 @@
             height: 480px;
             display: block;
             width: 100%;
+
+            @media (max-width: 991px) {
+               height: 380px;
+            }
+
+            @media (max-width: 767px) {
+               height: 270px;
+            }
         }
    }
 }

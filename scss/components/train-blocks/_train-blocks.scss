@@ -24,12 +24,21 @@
         padding-left: 70px;
         margin-bottom: 40px;
 
+        @media (max-width: 767px) {
+            padding-left: 0;
+        }
+
         p {
             font-size: 18px;
             line-height: 22px;
             text-align: justify;
             margin-bottom: 18px;
             color: $black;
+
+            @media (max-width: 767px) {
+                font-size: 16px;
+                line-height: normal;
+            }
 
             &:last-child {
                 margin-bottom: 0;
@@ -54,6 +63,10 @@
     position: relative;
     padding: 55px 0 55px 148px;
 
+    @media (max-width: 767px) {
+        padding: 55px 0 55px 20px;
+    }
+
     &__cube {
         position: absolute;
         top: 0;
@@ -61,12 +74,17 @@
         width: 175px;
         height: 100%;
         border: 25px solid $red;
+
+        @media (max-width: 767px) {
+            border: 10px solid $red;
+        }
     }
 
     &__text {
         background: #fff;
         position: relative;
         z-index: 1;
+        padding: 5px 0;
     }
 
     &__title {
@@ -74,6 +92,12 @@
         line-height: 36px; 
         color: $black;
         font-family: $mus900;
+
+        @media (max-width: 767px) {
+            font-size: 24px;
+            line-height: normal;
+            text-align: center;
+        }
     }
 
     &__sub-title {
@@ -81,5 +105,27 @@
         line-height: 29px;
         color: $black;
 
+        @media (max-width: 767px) {
+            font-size: 18px;
+            line-height: normal;
+            text-align: center;
+        }
+
+    }
+
+    &--center {
+        max-width: 700px;
+        margin: 0 auto 40px auto;
+        padding: 55px 0 55px 30px;
+
+        .block-head__title {
+            text-align: center;
+        }
+        .block-head__sub-title{
+            text-align: center;
+        }
+        .block-head__text{
+            padding: 10px 0;
+        }
     }
 }

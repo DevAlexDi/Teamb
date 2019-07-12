@@ -1,6 +1,7 @@
 @import "layout/var";
 
 .reviews {
+    margin-bottom: 70px;
     &__title {
         font-size: 30px;
         line-height: 36px;
@@ -8,6 +9,11 @@
         color: $black;
         margin-bottom: 24px;
         font-family: $mus900;
+
+        @media (max-width: 767px) {
+            font-size: 24px;
+            line-height: normal;
+        }
     }
 
     &__sub-title {
@@ -16,6 +22,11 @@
         color: $black;
         text-align: center;
         margin-bottom: 32px;
+
+        @media (max-width: 767px) {
+            font-size: 18px;
+            line-height: normal;
+        }
     }
 }
 
@@ -23,11 +34,26 @@
     &__item {
         margin-bottom: 40px;
     }
+
+    &__line {
+        max-width: 500px;
+        background: #E5E5E5;
+        height: 1px;
+        margin: 0 auto 24px auto;
+    }
+
+    &--hidden {
+        display: none;
+    }
 }
 
 .review {
     display: flex;
     align-items: center;
+
+    @media (max-width: 767px) {
+        flex-direction: column-reverse;
+    }
 
     &__left-side {
         width: 100%;
@@ -37,9 +63,34 @@
         width: 160px;
         flex-shrink: 0;
         margin-left: 30px;
+        
+        @media (max-width: 767px) {
+            margin: 0 auto 20px auto;
+            display: flex;
+            justify-content: center;
+        }
     }
 
     &__name {
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 24px;
+        font-family: $mus500;
+    }
 
+    &__text {
+
+        p{
+            font-size: 18px;
+            line-height: 22px;
+            text-align: justify;
+            color: $black;
+            margin-bottom: 18px;
+
+            @media (max-width: 767px) {
+                font-size: 16px;
+                line-height: normal;
+            }
+        }
     }
 }

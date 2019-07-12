@@ -9,19 +9,35 @@
     display: flex;
     align-items: center;
 
+    @media (max-width: 991px) {
+        min-height: 745px;
+    }
+
+    @media (max-width: 767px) {
+        min-height: 600px;
+    }
+
     &__content {
         width: 100%;
     }
+
+    
 }
 
 .baner-content {
     padding-top: 130px;
+    
     &__title {
         font-size: 48px;
         line-height: 58px;
         color: #fff;
         font-family: $mus900;
         margin-bottom: 16px;
+
+        @media (max-width: 767px) {
+            font-size: 32px;
+            line-height: normal;
+        }
     }
 
     &__sub-title {
@@ -31,6 +47,11 @@
         margin-bottom: 24px;
         font-family: $mus700;
 
+        @media (max-width: 767px) {
+            font-size: 18px;
+            line-height: normal;
+        }
+
     }
 
     &__description {
@@ -38,6 +59,11 @@
         font-size: 22px;
         line-height: 25px;
         margin-bottom: 32px;
+
+        @media (max-width: 767px) {
+            font-size: 18px;
+            line-height: normal;
+        }
     }
 }
 
@@ -56,6 +82,10 @@
 
         &:hover {
             background: $black;
+        }
+
+        &--hidden {
+            display: none;
         }
     }
 
